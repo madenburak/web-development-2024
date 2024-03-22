@@ -1,5 +1,5 @@
 # The Complete 2024 Web Development Bootcamp
-##What you will learn
+## What you will learn
 * Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.
 * Learn the latest technologies, including Javascript, React, Node and even Web3 development.
 *After the course you will be able to build ANY website you want.
