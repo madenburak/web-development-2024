@@ -1,0 +1,22 @@
+.poster {
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 25%;
+  text-align: center;
+  color: white;
+  font-family: "Basker Ville", serif;
+}
+
+#motivation-image {
+  width: 100%;
+  border: 5px solid white;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
