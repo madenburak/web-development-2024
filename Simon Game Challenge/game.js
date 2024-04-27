@@ -10,6 +10,10 @@ score = 0;
 $(document).keypress(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
+    $("#level-title").addClass("pressed");
+    setTimeout(function () {
+      $("#level-title").removeClass("pressed");
+    }, 2000);
     nextSequence();
     started = true;
   }
@@ -26,10 +30,11 @@ $(".btn").click(function () {
 });
 
 function checkAnswer(currentLevel) {
+  console.log("game" + gamePattern);
+  console.log("click" + userClickedPattern);
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     if (userClickedPattern.length === gamePattern.length) {
-      score++;
-      $("#score").text("Score is " + score);
+      level++;
       setTimeout(function () {
         nextSequence();
       }, 2000);
@@ -37,7 +42,7 @@ function checkAnswer(currentLevel) {
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#score").text("Game Over, Press Any Key to Restart");
 
     setTimeout(function () {
       $("body").removeClass("game-over");
@@ -49,8 +54,9 @@ function checkAnswer(currentLevel) {
 
 function nextSequence() {
   userClickedPattern = [];
-  level++;
-  $("#level-title").text("Level " + level);
+  gamePattern = [];
+
+  $("#score").text("Score: " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
