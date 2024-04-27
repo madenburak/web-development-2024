@@ -1,4 +1,4 @@
-# The Complete 2024 Web Development Bootcamp 👑Top Seller👑
+# The Complete 2024 Web Development Bootcamp👑Top Seller👑
 ## 🎓Tutor: Dr. Angela Yu
 ### What you will learn at bootcamp that has 🌟62+ hours🌟? 
 * Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.
