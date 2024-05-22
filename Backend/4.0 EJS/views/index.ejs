@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body class="container">
+    <main>
+      <div class="advice">
+        <h1>This is advice calender</h1>
+
+        <h2>Days</h2>
+
+        <ul>
+          <% days.forEach(function(day) { %>
+          <li>
+            <strong><%= day %></strong>
+            's advice is <% if(days.indexOf(day) < 5){ %>
+            <p>It's a weekday, it's time to work hard!</p>
+            <% } else{ %>
+            <p>It's the weekend, it is time to have fun!</p>
+            <% }%>
+          </li>
+
+          <% }); %>
+          <li><strong>Also Today is <% if(today < 5){ %>
+            <p>It's a weekday, it's time to work hard!</p>
+            <% } else{ %>
+            <p>It's the weekend, it is time to have fun!</p>
+            <% }%></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
